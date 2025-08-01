@@ -1,5 +1,5 @@
 interface Factory{
-    fun createDevice(): Device
+    fun createDevice(): Device = TODO("poti pune ceva default aici")
 }
 
 class LaptopFactory : Factory{
@@ -26,7 +26,7 @@ abstract class Device(){
 
 class Laptop: Device(){
     override fun printDetails() {
-        println("This device is laptop!")
+        println("This device is a laptop!")
     }
 }
 
