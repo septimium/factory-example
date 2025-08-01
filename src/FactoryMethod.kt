@@ -44,14 +44,14 @@ class Tablet: Device(){
 
 fun main() {
     val laptopFactory = LaptopFactory()
-    val laptop = Laptop()
+    val laptop = laptopFactory.createDevice()
     laptop.printDetails()
 
     val tabletFactory = TabletFactory()
-    val tablet = Tablet()
+    val tablet = tabletFactory.createDevice()
     tablet.printDetails()
 
     val smartphoneFactory = SmartphoneFactory()
-    val smartphone = Smartphone()
+    val smartphone = smartphoneFactory.createDevice()
     smartphone.printDetails()
 }
